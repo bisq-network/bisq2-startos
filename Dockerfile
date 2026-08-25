@@ -1,5 +1,5 @@
 # The published Bisq 2 node image (multi-arch amd64+arm64), digest-pinned.
-FROM ghcr.io/bisq-network/bisq2-api:2.1.11.1@sha256:af77443abc90114b0282d44a1fa5b5f3beeb608b6df76d8674f4366236856154
+FROM ghcr.io/bisq-network/bisq2-api:2.1.12.0@sha256:beba2f2db5aefca0f4b8d49285b105cb0b29d0eb0ed0f8136712aace0e167906
 
 USER root
 

@@ -2,13 +2,11 @@
 # The user-facing title stays "Bisq 2 Node".
 id: bisq-node
 title: "Bisq 2 Node"
-version: 2.1.11.1
+version: 2.1.12.0
 release-notes: |
-  First StartOS release of Bisq 2 Node.
-  - Self-hosted Bisq 2 node for the Bisq Connect mobile app.
-  - Reaches the Bisq P2P network over its own bundled Tor.
-  - Surfaces the pairing code (with a scannable QR) as a service property (the code encodes the node's onion address).
-  - A read-only status page over Tor; the pairing code is shown only in the authenticated Properties view, never on the page.
+  Security release: updates the embedded Bisq 2 node to 2.1.12.
+  - Required for trading: the Bisq security manager has published an emergency alert requiring version 2.1.12+ — nodes on older versions are blocked from taking or processing offers.
+  - Required by Bisq Connect 0.8.2+, which only pairs with nodes running 2.1.12 or newer.
 license: AGPL-3.0
 wrapper-repo: "https://github.com/bisq-network/bisq2-startos"
 upstream-repo: "https://github.com/bisq-network/bisq2"
