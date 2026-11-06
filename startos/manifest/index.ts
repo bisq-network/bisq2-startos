@@ -13,11 +13,16 @@ export const manifest = setupManifest({
   volumes: ['main'],
   images: {
     main: {
-      // Pinned to the tag's multi-arch index digest so a registry-side re-tag
-      // cannot change what a build pulls. UPDATING.md has the refresh command.
       source: {
-        dockerTag:
-          'ghcr.io/bisq-network/bisq2-api:2.1.14.0@sha256:5b028dbe98353fae10d49d8d69f864a7ef9d294647d868c127f66c9f6a4f0a64',
+        dockerBuild: {
+          buildArgs: {
+            // Pinned to the tag's multi-arch index digest so a registry-side
+            // re-tag cannot change what a build pulls. UPDATING.md has the
+            // refresh command.
+            IMAGE:
+              'ghcr.io/bisq-network/bisq2-api:2.1.14.1@sha256:7ce32c42543a0241796952155706aaa7c66c48160299ae773775f8c05adb7982',
+          },
+        },
       },
       arch: ['x86_64', 'aarch64'],
     },
